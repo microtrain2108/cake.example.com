@@ -53,6 +53,7 @@ class UsersController extends AppController
         if ($this->request->is('post') && !$result->isValid()) {
             $this->Flash->error(__('Invalid email or password'));
         }
+        
     }
     
     public function logout()
