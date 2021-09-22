@@ -1,3 +1,6 @@
 [submodule "plugins/contact"]
 	path = plugins/contact
 	url = git://github.com/msadouni/cakephp-contact-plugin.git
+[submodule "plugins/comments"]
+	path = plugins/comments
+	url = git@github.com:CakeDC/comments.git
