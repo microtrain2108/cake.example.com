@@ -45,6 +45,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <a target="_blank" rel="noopener" href="https://api.cakephp.org/">API</a> -->
             <a href="/posts/">Posts</a>
             <a href="/users/">Users</a>
+            <a href="/contacts/add">Contact Us</a>
         </div>
     </nav>
     <main class="main">

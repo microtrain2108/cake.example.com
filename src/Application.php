@@ -140,9 +140,9 @@ class Application extends BaseApplication
         
         // Social Media Connections
         $this->addPlugin('CakeDC/Users');
-        $this->addPlugin('GoogleAuthenticate');
+        // $this->addPlugin('GoogleAuthenticate');
         //Plugin::load(‘MailgunEmail’);
-        $this->addPlugin(‘MailgunEmail’);
+        // $this->addPlugin(‘MailgunEmail’);
 
     }
 }

@@ -85,6 +85,7 @@ $routes->scope('/', function (RouteBuilder $builder) {
  *     // $builder->setExtensions(['json', 'xml']);
  *     
  *     // Connect API actions here.
+ * 
  * });
  * ```
  */

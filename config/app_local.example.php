@@ -93,6 +93,9 @@ return [
         // Lab Mailgun - create a new EmailTransport **DO NOT PUSH API KEY**
         'mailgun' => [
             'className' => 'MailgunEmail.Mailgun',
+            'apiKey' => 'key-a18ed7fd440e49c2ada6e486f6c4b33f', // your api key
+            'apiEndpoint' => 'https://api.mailgun.net/v3/sandbox6de3b38b872e43599b53a27455a2fbeb.mailgun.org/messages',
+            'domain' => 'sandbox6de3b38b872e43599b53a27455a2fbeb.mailgun.org' // your sending domain
         ],
     ],
 ];
