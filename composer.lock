@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "04b1bd188d49556167efc55efa2c5a6a",
+    "content-hash": "92ccb82b08e740ea4e639d47ca9cdeec",
     "packages": [
         {
             "name": "cakedc/auth",
@@ -1429,6 +1429,64 @@
                 }
             ],
             "time": "2021-02-19T21:22:57+00:00"
+        },
+        {
+            "name": "narendravaghela/cakephp-mailgun",
+            "version": "5.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/narendravaghela/cakephp-mailgun.git",
+                "reference": "2e0d4b4e4e938427c9797008d9eec97f27273535"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/narendravaghela/cakephp-mailgun/zipball/2e0d4b4e4e938427c9797008d9eec97f27273535",
+                "reference": "2e0d4b4e4e938427c9797008d9eec97f27273535",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^4.0.0",
+                "ext-json": "*",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "^4.0",
+                "codacy/coverage": "^1.4",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Mailgun\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Narendra Vaghela",
+                    "homepage": "http://www.narendravaghela.com",
+                    "role": "Author"
+                },
+                {
+                    "name": "Community",
+                    "homepage": "https://github.com/narendravaghela/cakephp-mailgun/graphs/contributors"
+                }
+            ],
+            "description": "Mailgun plugin for CakePHP - Send emails using Mailgun API",
+            "keywords": [
+                "cakephp",
+                "email",
+                "mailgun"
+            ],
+            "support": {
+                "issues": "https://github.com/narendravaghela/cakephp-mailgun/issues",
+                "source": "https://github.com/narendravaghela/cakephp-mailgun"
+            },
+            "time": "2020-03-31T15:13:14+00:00"
         },
         {
             "name": "paragonie/random_compat",

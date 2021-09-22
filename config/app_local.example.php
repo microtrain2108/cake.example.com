@@ -81,13 +81,18 @@ return [
      * See app.php for more configuration options.
      */
     'EmailTransport' => [
-        'default' => [
-            'host' => 'localhost',
-            'port' => 25,
-            'username' => null,
-            'password' => null,
-            'client' => null,
-            'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
+        // 'default' => [
+        //     'host' => 'localhost',
+        //     'port' => 25,
+        //     'username' => null,
+        //     'password' => null,
+        //     'client' => null,
+        //     'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
+        // ],
+
+        // Lab Mailgun - create a new EmailTransport **DO NOT PUSH API KEY**
+        'mailgun' => [
+            'className' => 'MailgunEmail.Mailgun',
         ],
     ],
 ];

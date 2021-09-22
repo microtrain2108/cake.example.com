@@ -224,26 +224,30 @@ return [
      * 'YourTransport.php', where 'Your' is the name of the transport.
      */
     'EmailTransport' => [
-        'default' => [
+        // Lab Mailgun - create a new EmailTransport **DO NOT PUSH API KEY**
+        'mailgun' => [
+            'className' => 'MailgunEmail.Mailgun',
+        ],
+            // 'default' => [
             // turn on for email through server
             // 'className' => MailTransport::class,
-            'className' => 'Debug',
+            // 'className' => 'Debug',
             /*
              * The keys host, port, timeout, username, password, client and tls
              * are used in SMTP transports
              */
-            'host' => 'localhost',
-            'port' => 25,
-            'timeout' => 30,
+            // 'host' => 'localhost',
+            // 'port' => 25,
+            // 'timeout' => 30,
             /*
              * It is recommended to set these options through your environment or app_local.php
              */
             //'username' => null,
             //'password' => null,
-            'client' => null,
-            'tls' => false,
-            'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
-        ],
+            // 'client' => null,
+            // 'tls' => false,
+            // 'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
+        // ],
     ],
 
     /*
@@ -264,7 +268,12 @@ return [
              */
             //'charset' => 'utf-8',
             //'headerCharset' => 'utf-8',
+
+        // Lab Mailgun - create a new email delivery profile
         ],
+        'mailgun' => [
+            'transport' => 'mailgun'
+        ]    
     ],
 
     /*
