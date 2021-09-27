@@ -17,6 +17,7 @@
                     <th><?= $this->Paginator->sort('meta_keywords') ?></th>
                     <th><?= $this->Paginator->sort('meta_description') ?></th>
                     <th><?= $this->Paginator->sort('user_id') ?></th>
+                    <th><?= $this->Paginator->sort('comments') ?></th>
                     <th><?= $this->Paginator->sort('created') ?></th>
                     <th><?= $this->Paginator->sort('modified') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
@@ -31,6 +32,7 @@
                     <td><?= h($post->meta_keywords) ?></td>
                     <td><?= h($post->meta_description) ?></td>
                     <td><?= $post->has('user') ? $this->Html->link($post->user->id, ['controller' => 'Users', 'action' => 'view', $post->user->id]) : '' ?></td>
+                    <td><?= $post->has('comment') ? $this->Html->link($comment->comment, ['controller' => 'Comments', 'action' => 'view', $comment->comment]) : '' ?></td>
                     <td><?= h($post->created) ?></td>
                     <td><?= h($post->modified) ?></td>
                     <td class="actions">

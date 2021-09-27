@@ -12,6 +12,7 @@
             <?= $this->Form->postLink(__('Delete Post'), ['action' => 'delete', $post->id], ['confirm' => __('Are you sure you want to delete # {0}?', $post->id), 'class' => 'side-nav-item']) ?>
             <?= $this->Html->link(__('List Posts'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
             <?= $this->Html->link(__('New Post'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('Comment'), ['action' => '../comments/add'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
     <div class="column-responsive column-80">
@@ -55,6 +56,12 @@
                 <strong><?= __('Body') ?></strong>
                 <blockquote>
                     <?= $this->Text->autoParagraph(h($post->body)); ?>
+                </blockquote>
+            </div>
+            <div class="text">
+                <strong><?= __('Comment') ?></strong>
+                <blockquote>
+                <?= $post->has('comment') ? $this->Html->link($post->comment->comment, ['controller' => 'Comments', 'action' => 'view', $post->comment->comment]) : '' ?>
                 </blockquote>
             </div>
         </div>
