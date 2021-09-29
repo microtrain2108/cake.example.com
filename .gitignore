@@ -5,6 +5,12 @@
 /logs/*
 /tmp/*
 /vendor/*
+config/app.php
+config/app_local.example.php
+/config/app_local.example.php
+
+app_local.example.php
+app.php
 
 # OS generated files #
 ######################
@@ -41,5 +47,3 @@ nbproject/*
 .vscode
 # Sass preprocessor
 .sass-cache/
-/config/app.php
-/config/app_local.example.php
